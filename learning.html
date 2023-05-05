@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>访问网站背后的秘密</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(background.png);
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 85vh;
+		}
+        video {
+            display: block;
+            margin: 50px auto 0;
+        }
+		h1 {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+		h2 {
+            font-size: 32px;
+            color: black;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
+		.credit {
+			font-size: 16px;
+			font-weight: normal;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+		}
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
+		.black {
+    		color: black;
+		}
+	</style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link">课程内容</a>
+        <a href="exercises.html" class="nav-link">课后习题</a>
+        <a href="learning.html" class="nav-link">学习园地</a>
+    </div>
+	<div class="container">
+		<div style="background-color:white; width:80%; height:280px; margin:25px 0;">
+            <h2 style="margin-bottom:20px;"><a href="https://www.bilibili.com/video/BV1c4411d7jb/?share_source=copy_web&vd_source=8f0429a3bfdcc372918b74988b4ea093">学习园地 for 计算机网络</a></h2>
+			<h2 style="margin-bottom:20px;"><a href="https://www.runoob.com/html/html-tutorial.html">学习园地 for HTML</a></h2>
+            <h2 style="margin-bottom:20px;"><a href="https://www.runoob.com/css/css-tutorial.html">学习园地 for CCS</a></h2>
+            <h2 style="margin-bottom:20px;"><a href="https://www.runoob.com/js/js-tutorial.html">学习园地 for JavaScript</a></h2>
+        </div>
+		<p style="margin-top:5px;">计设2023微课作品 -- 队员：唐敏 姚栋宇 谢盛昊</p>
+		<div class="credit">
+			Photo by Rain James Y
+		</div>
+	</div>
+</body>
+</html>
