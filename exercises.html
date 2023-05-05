@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>访问网站背后的秘密</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(background.png);
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 85vh;
+		}
+        video {
+            display: block;
+            margin: 50px auto 0;
+        }
+		h1 {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
+		.credit {
+			font-size: 16px;
+			font-weight: normal;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+		}
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
+	</style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link">课程内容</a>
+        <a href="exercises.html" class="nav-link">课后习题</a>
+        <a href="learning.html" class="nav-link">学习园地</a>
+    </div>
+	<div class="container">
+		<h1>访问网站背后的秘密</h1>
+		<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin-top:20px;">
+			<video width="75%" controls autoplay>
+				<source src="video_file.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<p style="margin-top:5px;">计设2023微课作品 -- 队员：唐敏 姚栋宇 谢盛昊</p>
+		<div class="credit">
+			Photo by Rain James Y
+		</div>
+	</div>
+</body>
+</html>
