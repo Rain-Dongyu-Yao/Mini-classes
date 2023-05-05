@@ -45,9 +45,36 @@
 			color: white;
 			margin-top: 5px;
 		}
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
 	</style>
 </head>
 <body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link">课程内容</a>
+        <a href="exercises.html" class="nav-link">课后习题</a>
+        <a href="learning.html" class="nav-link">学习园地</a>
+    </div>
 	<div class="container">
 		<h1>访问网站背后的秘密</h1>
 		<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin-top:20px;">
