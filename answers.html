@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>访问网站背后的秘密</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(background.png);
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 85vh;
+            position: relative;
+		}
+        video {
+            display: block;
+            margin: 50px auto 0;
+        }
+		h1 {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+		h2 {
+            font-size: 32px;
+            color: black;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+            margin-top: 10;
+            margin-bottom: 0;
+        }
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: left;
+			color: white;
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
+		.credit {
+			font-size: 16px;
+			font-weight: normal;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+		}
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
+		.black {
+    		color: black;
+		}
+        .red {
+    		color: red;
+		}
+	</style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link">课程内容</a>
+        <a href="exercises.html" class="nav-link">课后习题</a>
+        <a href="learning.html" class="nav-link">学习园地</a>
+    </div>
+	<div class="container">
+		<div style="background-color:white; width:80%; height:4000px; margin:100px ;">
+            <h2 style="margin-bottom:15px; margin-top: 1650px;"><span class="black">课后习题答案和解析</span></h2>
+			<p><span class="black">1. 视频中把DNS服务器类比为电话簿。
+                作用为：类似电话簿可以存储联联系人名称对应的电话号码，DNS服务器也存储了域名对应的IP地址。
+                它使得人们可以使用易于记忆的域名来访问互联网上的各种资源，而不必记住它们的IP地址。<a href="https://blog.csdn.net/Wufjsjjx/article/details/129813137">更详细说明</a> </span></p>
+            <p><span class="black">2. 【括号中的内容为对应的真实过程】<br>
+                第一次握手：小明（客户端）向李老师（服务器）询问是否有空（发送一个SYN包，请求建立连接）。SYN（Synchronize Sequence Numbers，同步序列号）包包含一个随机的序列号，用于标识数据包。<br>
+                第二次握手：李老师（服务器）接收到小明（客户端）的SYN包后，会回复一个SYN/ACK包，表示确认收到小明（客户端）的请求，并表示自己有空（发送自己的随机序列号）。<br>
+                第三次握手：小明（客户端）接收到李老师（服务器）的肯定答复（SYN/ACK包）后，确认了李老师这时候有空（确认服务器具有发送和接受能力），于是告知李老师可以开始讨论正式内容了（发送一个ACK包，确认收到服务器的响应）。<br>
+                在三次握手完成后，客户端和服务器之间建立了一个可靠的连接，可以开始互相传输数据了。如果其中任何一个阶段失败，那么连接就会失败，并且客户端或服务器将会重试连接。<a href="https://zhuanlan.zhihu.com/p/430799766">详细解析</a></span></p>
+            <p><span class="black">3. 由以下四部分组成：<br>
+                · 报文首部：包含了HTTP报文的一些元数据信息，如请求方法、状态码、响应消息、内容类型等。报文首部是HTTP报文中最重要的部分之一，用于描述HTTP报文的属性和含义。<br>
+
+                · 空行：表示报文首部与报文体之间的分隔符。空行是一个只包含回车符和换行符的行，它通常用于分隔报文首部和报文体。<br>
+                
+                · 报文体：包含了HTTP请求或响应的正文内容，例如HTML文档、图片、音频、视频等。对于GET请求来说，报文体通常为空；对于POST请求来说，报文体通常包含了需要提交到服务器的数据。<br>
+                
+                · 报文尾部：在某些情况下，HTTP报文可以包含报文尾部，用于描述报文体的长度或数据校验等信息。报文尾部并不是HTTP报文的必要部分，只有在特定的情况下才会包含报文尾部，例如使用chunked编码传输时。<a href="https://zhuanlan.zhihu.com/p/450128753">详细解析</a></span></p>
+			<p><span class="black">4. 
+                HTML是网页内容的载体，类比人的头颅骨架，决定了最基本的五官。<br>
+                CSS用来表现HTML样式，改变内容外观，它的存在相当于人的外貌。<br>
+                JavaScript可以让静态HTML具有一定交互行为，相当于人的音容笑貌。
+                 <a href="https://blog.csdn.net/hemiaolin8393/article/details/80557781">详细解析</a></span></p>
+            <h2 style="margin-bottom:15px;"><span class="red">附加题答案和解析</span></h2>
+			<p><span class="black">1. <br>
+                HTTP 的常见请求方式包括： <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;GET：从服务器获取指定资源。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;POST：将数据提交到服务器以创建或更新资源。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;PUT：将指定资源上传到服务器以创建或更新资源。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;DELETE：从服务器删除指定资源。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;HEAD：获取资源的头部信息，而不获取其内容。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;OPTIONS：获取服务器支持的请求方法、编码类型等信息。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;CONNECT：建立与服务器的隧道以进行代理请求。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;TRACE：对服务器进行追踪诊断，获取服务器收到的原始请求和响应。<br>
+                HTTP 的常见响应状态包括：<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1xx：信息响应，表示请求已被接收并正在处理。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2xx：成功响应，表示请求已成功处理。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3xx：重定向响应，表示需要客户端进一步操作才能完成请求。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;4xx：客户端错误，表示请求存在问题，服务器无法处理请求。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;5xx：服务器错误，表示服务器无法完成有效请求。
+                <a href="https://zhuanlan.zhihu.com/p/45173862">详细解析</a></span></p>
+			<p><span class="black">2. <br>
+                DNS（Domain Name System）是互联网中的一个重要协议，它的主要作用是将域名转换为IP地址，以便互联网上的计算机能够相互通信。DNS服务器则是负责维护域名和IP地址之间对应关系的服务器。以下是DNS协议的工作原理和转发、逆向解析的解释：<br>
+                DNS协议的工作原理： <br>
+                当我们在浏览器中输入一个网址时，例如www.example.com，DNS服务器就会根据这个域名查询对应的IP地址，并将其返回给浏览器，浏览器再通过这个IP地址与服务器建立连接，最终打开网页。DNS协议的工作原理可以概括为以下几个步骤： <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;首先，浏览器会向本地DNS服务器发起请求，询问其是否知道该域名对应的IP地址。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;如果本地DNS服务器中没有这个域名的IP地址缓存，它会向根DNS服务器发送请求。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;根DNS服务器会告诉本地DNS服务器，该域名使用哪个顶级域名服务器（例如.com、.cn等）来处理。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;本地DNS服务器再向指定的顶级域名服务器发起请求，询问其哪个权威DNS服务器可以提供该域名对应的IP地址。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;权威DNS服务器返回该域名的IP地址给本地DNS服务器。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;最后，本地DNS服务器将该域名的IP地址返回给浏览器，并将其缓存在本地，以备下次查询时使用。<br>
+
+                DNS协议的转发和逆向解析： <br>
+
+                DNS服务器可以进行转发和逆向解析。转发是指当本地DNS服务器无法解析某个域名时，它会将请求转发给另一个DNS服务器进行处理。逆向解析是指DNS服务器可以将IP地址转换成对应的域名。这两个概念在以下两种情况下很常见：<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;跨越多个网络时，可能需要多个DNS服务器进行协同工作。如果某个DNS服务器无法解析某个域名，它会将请求转发给其他DNS服务器进行处理，以便最终找到该域名对应的IP地址。<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;在网络故障排查中，有时候需要根据IP地址确定对应的域名。这时候就需要进行逆向解析，将IP地址转换成对应的域名，以便进行问题定位和排除。<br>
+
+                总之，DNS服务器是互联网中的重要组成部分，它们可以将域名转换成对应的IP地址，使得互联网上的计算机能够相互通信。DNS协议的转发和逆向解析也使得DNS服务器在网络故障。<br>
+                
+                <a href="https://zhuanlan.zhihu.com/p/88260838">详细解析</a></span></p>
+			<p><span class="black">3. <br>
+                SSL和TLS（Transport Layer Security）协议是用于在计算机网络上进行安全通信的协议。它们的主要目的是为了确保在网络上传输的数据不被未经授权的第三方窃取或篡改。<br>
+
+                SSL是由网景公司开发的协议，TLS是基于SSL协议发展而来的更安全的协议。TLS目前广泛应用于互联网上的数据传输。<br>
+
+                SSL和TLS协议实现加密通信的过程可以概括为以下几个步骤：<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;· 客户端向服务器发送请求，请求建立加密通信。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 服务器向客户端返回证书，证书包含服务器的公钥。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 客户端验证服务器证书的合法性，并生成一个随机密钥。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 客户端使用服务器的公钥对随机密钥进行加密，然后将加密后的密钥发送给服务器。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 服务器使用自己的私钥对客户端发送的随机密钥进行解密，获得了该密钥。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 客户端和服务器使用该密钥进行加密和解密数据的通信。<br>
+                SSL和TLS协议可以保证数据在传输过程中的机密性、完整性和可信性。其中，机密性指的是只有授权的用户才能够读取传输的数据；完整性指的是传输的数据在传输过程中没有被篡改或修改；可信性指的是通信的两端都可以互相验证对方的身份，以确保通信的安全性。<br>
+
+                转发解析是指DNS服务器将请求转发给另一台DNS服务器来获取域名的IP地址。这种情况通常发生在当前DNS服务器没有所需的域名解析记录时。逆向解析是指DNS服务器根据IP地址查询域名。这种情况通常用于跟踪网络攻击或者检测垃圾邮件来源。
+                
+                <a href="https://zhuanlan.zhihu.com/p/133375078">详细解析</a></span></p>
+        </div>
+		<!-- <p style="margin-top:5px;">计设2023微课作品 -- 队员：唐敏 姚栋宇 谢盛昊</p>-->
+		<!-- <div class="credit">
+			Photo by Rain James Y
+		</div>-->
+	</div>
+</body>
+</html>
